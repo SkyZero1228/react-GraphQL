@@ -1,0 +1,8 @@
+@import '../../../../../../resources/mixins';
+
+.NonMemberCreateAccount {
+  margin-top: 50px;
+  .card-header {
+    background-color: $gray-lighten-more-more;
+  }
+}

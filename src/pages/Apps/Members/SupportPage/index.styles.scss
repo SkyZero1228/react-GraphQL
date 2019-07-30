@@ -1,0 +1,56 @@
+@import '../../../../resources/mixins';
+
+.SupportPage {
+  width: 100%;
+  text-align: center;
+
+  &__TviLogo {
+    width: 250px;
+    margin: auto;
+  }
+
+  &__headline {
+    margin: 10px 0 30px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: $TripValet_Light;
+  }
+
+  &__toll-free {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__email {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $xs-max-width) {
+    &__toll-free {
+      font-size: 16px;
+    }
+
+    &__email {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    &__headline {
+      font-size: 28px;
+    }
+
+    &__toll-free {
+      font-size: 16px;
+    }
+
+    &__email {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../../../resources/mixins';
+
+.NumberSpinner {
+  display: flex;
+  justify-content: center;
+
+  &__Minus {
+    border: solid 1px $TripValet_Dark;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 4px 18px;
+    background-color: $TripValet_Light;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    background-image: url(/resources/images/svgs/MinusSymbol.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+  }
+  &__Input {
+    border: none;
+    border-top: solid 1px $TripValet_Dark;
+    border-bottom: solid 1px $TripValet_Dark;
+    width: 50px;
+    border-radius: 0;
+    text-align: center;
+    font-weight: bold;
+    line-height: 28px;
+    font-size: 15px;
+    color: $TripValet_Dark;
+  }
+  &__Plus {
+    border: solid 1px $TripValet_Dark;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 4px 18px;
+    background-color: $TripValet_Light;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    background-image: url(/resources/images/svgs/PlusSymbol.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+  }
+}

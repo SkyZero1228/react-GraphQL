@@ -1,0 +1,84 @@
+@import '../../../../../resources/mixins';
+
+.VideosPage {
+  &__full-width-background {
+    background-color: $TripValet_Light;
+  }
+
+  &__video-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    &__category-wrapper {
+      min-width: 150px;
+      flex: 1;
+
+      .category {
+        margin: 5px 0;
+        cursor: pointer;
+      }
+
+      // Do media query here
+    }
+
+    @media (max-width: $xs-max-width) {
+      &__category-wrapper {
+        min-width: 85px;
+      }
+    }
+
+    &__video-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 10;
+      flex-direction: column;
+      justify-content: space-around;
+      display: block;
+
+      &__cards_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+      }
+
+      &__video-card {
+        margin-bottom: 30px;
+        min-width: 325px;
+        max-width: 325px;
+        margin: 10px;
+        flex: 1;
+
+        .title {
+          font-weight: bold;
+          text-align: center;
+          font-size: 14px;
+          margin: 8px 0;
+        }
+        .ant-card-body {
+          padding: 0;
+        }
+      }
+
+      @media (max-width: $xs-max-width) {
+        &__video-card {
+          min-width: 300px;
+          max-width: 380px;
+        }
+      }
+
+      @media (max-width: $xxs-max-width) {
+        &__video-card {
+          min-width: 250px;
+          max-width: 280px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $xs-max-width) {
+    &__video-body {
+      padding: 0;
+    }
+  }
+}

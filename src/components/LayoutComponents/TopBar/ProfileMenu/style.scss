@@ -1,0 +1,17 @@
+// @import '../../../../resources/mixins';
+
+.profileMenu {
+  &__inMenu {
+    float: right !important;
+    margin: 8px !important;
+
+    .anticon {
+      color: #113376;
+    }
+  }
+  &__threeForFree {
+    height: 48px;
+    width: auto;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../../../resources/mixins';
+
+.HtmlEditor {
+  &__wrapper {
+    .rdw-editor-toolbar {
+      border-color: $gray-darken;
+      margin-bottom: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  &__editor {
+    font-size: 14px;
+    &.rdw-editor-main {
+      padding: 0 10px;
+      border: solid 1px $gray-darken;
+      background-color: $gray-lighten-more-more;
+      border-top: none;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+    }
+  }
+}

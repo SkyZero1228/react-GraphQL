@@ -1,0 +1,33 @@
+@import '../../../../../resources/mixins';
+
+.ClickFunnelsPage {
+  &__coming-soon {
+    margin: 100px 400px;
+
+    @media (max-width: $xxl-max-width) {
+      margin: 100px 350px;
+    }
+
+    @media (max-width: $xl-max-width) {
+      margin: 100px 275px;
+    }
+
+    @media (max-width: $md-max-width) {
+      margin: 100px 200px;
+    }
+
+    @media (max-width: $sm-max-width) {
+      margin: 100px;
+    }
+
+    @media (max-width: $xs-max-width) {
+      margin: 65px;
+    }
+  }
+}
+.ant-card-head-title {
+  font-weight: bold;
+}
+.ant-card-head {
+  background-color: $gray-lighten;
+}

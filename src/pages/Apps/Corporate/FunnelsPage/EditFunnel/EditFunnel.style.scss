@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400italic);
+
+@mixin grab-cursor {
+  cursor: url('https://www.google.com/intl/en_ALL/mapfiles/openhand.cur'), all-scroll;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+
+@mixin grabbing-cursor {
+  cursor: move;
+}
+
+.li-funnels {
+  list-style-type: none;
+  cursor: move;
+}
+
+.ul-funnels {
+  padding-inline-start: 0px;
+}

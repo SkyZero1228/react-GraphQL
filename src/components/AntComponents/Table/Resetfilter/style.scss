@@ -1,0 +1,24 @@
+.TableDemo {
+  .table-operations {
+    margin-bottom: 16px;
+  }
+
+  .table-operations > button {
+    margin-right: 8px;
+
+    ul.ant-menu.ant-menu-light.ant-menu-root.ant-menu-vertical {
+      border: solid 1px #eee;
+      border-radius: 3px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+      li {
+        line-height: 30px;
+        height: 30px;
+
+        &:hover {
+          background-color: #eee;
+        }
+      }
+    }
+  }
+}

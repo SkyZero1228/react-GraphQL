@@ -1,0 +1,20 @@
+#react-org-chart {
+  svg {
+    height: calc(100vh - 275px) !important;
+  }
+}
+
+.org-chart-person-link {
+  display: none;
+}
+
+.org-chart-person-title {
+  text-align: center;
+}
+
+.ant-tree {
+  svg {
+    position: relative;
+    top: -3px;
+  }
+}

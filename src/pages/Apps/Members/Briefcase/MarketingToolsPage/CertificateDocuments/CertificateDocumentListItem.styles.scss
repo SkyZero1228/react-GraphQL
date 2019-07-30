@@ -1,0 +1,108 @@
+@import '../../../../../../resources/mixins';
+
+.CertificateDocumentListItem {
+  &__certificate-card {
+    margin: 7px auto;
+
+    &--selected {
+      border: solid 1px $success;
+
+      &:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      border: solid 1px $success;
+    }
+
+    &__selectedIcon {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      right: 0px;
+      padding: 5px;
+      background: rgba(255, 255, 255, 0.85);
+      border-bottom: solid 1px $success;
+
+      .anticon {
+        font-size: 17px;
+        position: relative;
+        color: $success;
+        top: 2px;
+      }
+
+      span {
+        margin-left: 5px;
+        font-weight: 700;
+      }
+    }
+
+    .ant-card-body {
+      padding: 10px;
+
+      .ant-card-meta-title {
+        font-size: 12px;
+      }
+    }
+
+    .ant-card-meta-description {
+      min-height: 330px;
+    }
+
+    &__notPro {
+      position: absolute;
+      top: 0;
+      bottom: 15px;
+      background-color: rgba(255, 255, 255, 0.5);
+      left: 0;
+      right: 0;
+
+      &__text {
+        position: absolute;
+        background: #000;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+
+        i {
+          font-size: 32px;
+          color: red;
+          position: relative;
+          top: 3px;
+          // margin-right: 5px;
+          // float: left;
+        }
+      }
+    }
+
+    &__plus {
+      position: absolute;
+      top: 0;
+      bottom: 15px;
+      background-color: rgba(255, 255, 255, 0.5);
+      left: 0;
+      right: 0;
+
+      &__download {
+        position: absolute;
+        background: #fff;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 9px;
+
+        i {
+          font-size: 32px;
+          color: red;
+          position: relative;
+          top: 3px;
+          // margin-right: 5px;
+          // float: left;
+        }
+      }
+    }
+  }
+}

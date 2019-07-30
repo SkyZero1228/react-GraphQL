@@ -1,0 +1,215 @@
+export default [
+  {
+    title: 'Home',
+    key: 'membersHome',
+    icon: 'icmn icmn-home',
+    url: '/members',
+    visible: true,
+  },
+  {
+    title: 'Briefcase',
+    key: 'briefcase',
+    icon: 'icmn icmn-books',
+    visible: true,
+    children: [
+      {
+        title: 'Escape Bucks',
+        key: 'escapeBucks',
+        url: '/members/briefcase/escape-bucks',
+        visible: true,
+      },
+      {
+        title: 'Marketing Tools',
+        key: 'marketingTools',
+        url: '/members/briefcase/marketing-tools',
+        visible: true,
+      },
+      {
+        title: 'Videos',
+        key: 'videos',
+        url: '/members/briefcase/videos',
+        visible: true,
+      },
+      {
+        title: 'ClickFunnels Landing Pages',
+        key: 'clickFunnelsLandingPages',
+        url: '/members/briefcase/clickfunnels-landing-pages',
+        visible: true,
+      },
+      {
+        title: 'Prospects',
+        key: 'membersBriefcaseProspects',
+        url: '/members/briefcase/prospects',
+        visible: true,
+      },
+    ],
+  },
+
+  // {
+  //   title: 'Account Settings',
+  //   key: 'accountSettings',
+  //   icon: 'icmn icmn-user',
+  //   children: [
+  //     {
+  //       title: 'User Account',
+  //       key: 'userAccount',
+  //       url: '/members/account-settings/user-account',
+  //     },
+  //     {
+  //       title: 'Change Password',
+  //       key: 'changePassword',
+  //       url: '/members/account-settings/change-password',
+  //     },
+  //     {
+  //       title: 'Payment Information',
+  //       key: 'paymentInformation',
+  //       url: '/members/account-settings/payment-information',
+  //     },
+  //   ],
+  // },
+  {
+    title: 'FAQ',
+    key: 'faq',
+    icon: 'icmn icmn-drawer',
+    url: '/members/faq',
+    visible: true,
+  },
+  {
+    title: 'Support',
+    key: 'support',
+    icon: 'icmn icmn-bubbles4',
+    url: '/members/support',
+    visible: true,
+  },
+
+  {
+    title: 'Affiliates',
+    key: 'affiliates',
+    icon: 'icmn icmn-office',
+    visible: true,
+    children: [
+      {
+        title: 'Commissions',
+        key: 'affiliatesCommissions',
+        url: '/affiliates/commissions',
+        visible: true,
+      },
+      {
+        title: 'Genealogy',
+        key: 'affiliatesGenealogy',
+        url: '/affiliates/genealogy',
+        visible: true,
+      },
+      {
+        title: 'Leads',
+        key: 'affiliatesLeads',
+        url: '/affiliates/leads',
+        visible: true,
+      },
+      {
+        title: 'Links',
+        key: 'affiliatesLinks',
+        url: '/affiliates/links',
+        visible: true,
+      },
+      {
+        title: 'Subscription Status',
+        key: 'affiliatesSubscriptions',
+        url: '/affiliates/subscriptions',
+        visible: true,
+      },
+    ],
+  },
+  {
+    title: 'Administration',
+    key: 'admin',
+    icon: 'icmn icmn-office',
+    visible: true,
+    children: [
+      {
+        title: 'Add Escape Bucks',
+        key: 'adminAddEscapeBucks',
+        url: '/corporate/add-escapebucks',
+        visible: true,
+      },
+      {
+        title: 'Upload Mexico certs',
+        key: 'adminUploadCSV',
+        url: '/corporate/uploadcsv',
+        visible: true,
+      },
+      {
+        title: 'Commissions',
+        key: 'adminCommissions',
+        url: '/corporate/commissions',
+        visible: true,
+      },
+      {
+        title: 'Funnels',
+        key: 'adminFunnels',
+        url: '/corporate/funnels',
+        visible: true,
+      },
+      {
+        title: 'Assignment Jobs',
+        key: 'adminAssignmentJobs',
+        url: '/corporate/assignment-jobs',
+        visible: true,
+      },
+      {
+        title: 'Orders',
+        key: 'adminOrders',
+        url: '/corporate/orders',
+        visible: true,
+      },
+      {
+        title: 'Products',
+        key: 'adminProducts',
+        url: '/corporate/products',
+        visible: true,
+      },
+      {
+        title: 'Reservations',
+        key: 'adminReservations',
+        url: '/corporate/reservations',
+        visible: true,
+      },
+      {
+        title: 'Trips',
+        key: 'adminTrips',
+        url: '/corporate/trips',
+        visible: true,
+      },
+      {
+        title: 'Users',
+        key: 'adminUsers',
+        url: '/corporate/users',
+        visible: true,
+      },
+      {
+        title: 'User Subscription',
+        key: 'adminUserSubscription',
+        url: '/corporate/user-subscriptions',
+        visible: true,
+      },
+      {
+        title: 'User Transfer',
+        key: 'adminUserTransfer',
+        url: '/corporate/user-transfer',
+        visible: true,
+      },
+      {
+        title: 'Videos',
+        key: 'adminVideos',
+        url: '/corporate/videos',
+        visible: true,
+      },
+      {
+        title: 'Certificates',
+        key: 'adminCertificates',
+        url: '/corporate/certificates',
+        visible: true,
+      },
+    ],
+  },
+];

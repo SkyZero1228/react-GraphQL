@@ -1,0 +1,114 @@
+@import '../../../resources/mixins';
+
+.GiftAcceptance {
+  width: 100%;
+
+  &__wrapper {
+    max-width: 600px;
+    margin: 20px auto;
+
+    @media (max-width: $xs-max-width) {
+      margin: 0;
+    }
+
+    .logo {
+      padding: 0 20px 20px 20px;
+      text-align: center;
+
+      img {
+        width: 350px;
+        margin-bottom: 0;
+      }
+    }
+
+    &__content {
+      border-radius: 10px;
+      background-color: white;
+
+      img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        @media (max-width: $xs-max-width) {
+          border-radius: 0;
+        }
+      }
+
+      &__details {
+        margin: auto rem(20);
+
+        h2 {
+          font-weight: bold;
+          text-align: center;
+          margin: 20px auto;
+          display: inline-block;
+          width: 100%;
+        }
+        h5 {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      &__accepted {
+        margin: 100px auto;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+
+        h1 {
+          font-weight: bold;
+          text-align: center;
+          display: inline-block;
+          width: 100%;
+        }
+        h2 {
+          font-weight: bold;
+          text-align: center;
+          margin: 20px auto;
+          display: inline-block;
+          width: 100%;
+        }
+        h5 {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      @media (max-width: $xs-max-width) {
+        border-radius: 0;
+      }
+    }
+  }
+
+  @media (max-width: $xs-max-width) {
+    margin: rem(16) !important;
+  }
+}
+
+.utils__content-image-wrapper {
+  &.mobile {
+    background-image: none;
+    background-color: white;
+
+    .GiftAcceptance__wrapper {
+      margin: 0;
+
+      .logo {
+        padding: 20px 20px 20px 20px;
+        text-align: center;
+
+        img {
+          width: 280px;
+          margin-bottom: 0;
+        }
+      }
+
+      &__content__accepted {
+        margin: 30px auto;
+        width: 100%;
+      }
+    }
+  }
+}

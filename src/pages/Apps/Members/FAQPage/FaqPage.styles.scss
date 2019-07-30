@@ -1,0 +1,42 @@
+@import '../../../../resources/mixins';
+
+.FaqPage {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__panel {
+    background-color: $white;
+    border-radius: 4px;
+    margin: 8px auto;
+    border: 0;
+    overflow: hidden;
+    text-align: left;
+
+    .ant-collapse-header {
+      font-weight: 700;
+    }
+  }
+  &__header-image {
+    min-width: 300px;
+    max-width: 350px;
+    margin: 0 auto;
+    flex: 1;
+  }
+  &__faq-panels {
+    min-width: 400px;
+    flex: 2;
+    margin: 0 auto;
+  }
+  @media (max-width: $xxs-max-width) {
+    &__faq-panels {
+      min-width: 300px;
+    }
+  }
+
+  @media (max-width: $xs-max-width) {
+    &__faq-panels {
+      min-width: 300px;
+    }
+  }
+}
